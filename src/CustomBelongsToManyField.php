@@ -116,7 +116,7 @@ class CustomBelongsToManyField extends Field
         }
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize() :array
     {
         return array_merge([
             'component' => $this->component(),
